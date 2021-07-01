@@ -1,12 +1,12 @@
 {
   "name": "@vmo11/eslint-config-vmo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ESLint + Prettier",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
-    "release": "yarn lint:fix && git tag v$npm_package_version && git push --tags",
+    "release": "npm run lint:fix && git tag v$npm_package_version && git push --tags",
     "commit": "git cz"
   },
   "dependencies": {
