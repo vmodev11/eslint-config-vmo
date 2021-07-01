@@ -1,20 +1,15 @@
 {
   "name": "@vmo11/eslint-config-vmo",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "ESLint + Prettier",
   "main": "index.js",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "index.js",
-    "lib"
-  ],
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix",
-    "release": "git push && npm publish --access public"
+    "lint:fix": "eslint --ignore-path .gitignore . --fix",
+    "release": "yarn lint:fix && with-package git commit -am pkg.version && with-package git tag pkg.version && git push && git push --tags"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
     "eslint": "^7.29.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
@@ -45,5 +40,9 @@
   "bugs": {
     "url": "https://github.com/vmodev11/eslint-config-vmo/issues"
   },
-  "homepage": "https://github.com/vmodev11/eslint-config-vmo#readme"
+  "homepage": "https://github.com/vmodev11/eslint-config-vmo#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "with-package": "^1.0.2"
+  }
 }
