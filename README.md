@@ -1,5 +1,7 @@
 # ESLint + Prettier Config
+
 > Airbnb's ESLint config with TypeScript support
+
 ## Overview
 
 ## Installation
@@ -9,13 +11,17 @@ To install the package, run:
 ```shell
 $ npm install -D @vmo11/eslint-config-vmo
 ```
+
 or
+
 ```shell
 $ yarn add -D @vmo11/eslint-config-vmo
 ```
 
 Included:
+
 - eslint
+- @typescript-eslint/eslint-plugin
 - [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript)
 - eslint-config-prettier
 - eslint-plugin-import
@@ -36,14 +42,18 @@ Included:
   "extends": ["@vmo11/eslint-config-vmo"]
 }
 ```
+
 _Without React_
+
 ```tsx
 // .eslintrc
 {
   "extends": ["@vmo11/eslint-config-vmo/base"]
 }
 ```
+
 _With Jest_
+
 ```tsx
 // .eslintrc
 {
