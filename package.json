@@ -1,8 +1,15 @@
 {
   "name": "@vmo11/eslint-config-vmo",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "ESLint + Prettier",
   "main": "index.js",
+  "files": [
+    "lib",
+    "base.js",
+    "index.js",
+    "jest.js",
+    "README.md"
+  ],
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix",
