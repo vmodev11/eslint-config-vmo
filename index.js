@@ -1,6 +1,7 @@
 const base = require('./lib/base.js');
 const react = require('./lib/react.js');
 const prettier = require('./lib/prettier.js');
+const ts = require('./lib/ts-rule.js');
 
 module.exports = {
   extends: ['airbnb-typescript', 'airbnb/hooks', 'plugin:prettier/recommended'],
@@ -24,6 +25,7 @@ module.exports = {
     ...base,
     ...react,
     ...prettier,
+    ...ts,
   },
   settings: {
     react: {

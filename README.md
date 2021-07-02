@@ -9,18 +9,17 @@
 To install the package, run:
 
 ```shell
-$ npm install -D @vmo11/eslint-config-vmo
+$ yarn add -D eslint prettier @vmo11/eslint-config-vmo
 ```
 
 or
 
 ```shell
-$ yarn add -D @vmo11/eslint-config-vmo
+$ npm install -D eslint prettier @vmo11/eslint-config-vmo
 ```
 
 Included:
 
-- eslint
 - @typescript-eslint/eslint-plugin
 - [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript)
 - eslint-config-prettier
@@ -32,7 +31,6 @@ Included:
 - eslint-plugin-react-hooks
 - eslint-plugin-simple-import-sort
 - eslint-plugin-testing-library
-- prettier
 
 ## Usage
 
@@ -58,6 +56,22 @@ _With Jest_
 // .eslintrc
 {
   "extends": ["@vmo11/eslint-config-vmo", "@vmo11/eslint-config-vmo/jest"]
+}
+```
+
+_Just javascript_
+
+```jsx
+// .eslintrc
+{
+  "extends": ["@vmo11/eslint-config-vmo/base-js"]
+}
+```
+
+```jsx
+// .eslintrc
+{
+  "extends": ["@vmo11/eslint-config-vmo/react-js"]
 }
 ```
 

@@ -1,9 +1,8 @@
 const base = require('./lib/base.js');
 const prettier = require('./lib/prettier.js');
-const ts = require('./lib/ts-rule.js');
 
 module.exports = {
-  extends: ['airbnb-typescript/base', 'plugin:prettier/recommended'],
+  extends: ['airbnb/base', 'plugin:prettier/recommended'],
   env: {
     browser: true,
     commonjs: true,
@@ -14,12 +13,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
-    project: './tsconfig.json',
   },
   plugins: ['simple-import-sort', 'import'],
   rules: {
     ...base,
     ...prettier,
-    ...ts,
   },
 };
