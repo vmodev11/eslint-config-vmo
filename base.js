@@ -1,4 +1,5 @@
 const base = require('./lib/base.js');
+const prettier = require('./lib/prettier.js');
 
 module.exports = {
   extends: ['airbnb-typescript/base', 'plugin:prettier/recommended'],
@@ -17,5 +18,6 @@ module.exports = {
   plugins: ['simple-import-sort', 'import'],
   rules: {
     ...base,
+    ...prettier,
   },
 };
