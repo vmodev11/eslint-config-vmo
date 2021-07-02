@@ -9,13 +9,15 @@
 To install the package, run:
 
 ```shell
-$ yarn add -D eslint prettier @vmo11/eslint-config-vmo
+$ yarn add -D @vmo11/eslint-config-vmo
+$ npx install-peerdeps -D @vmo11/eslint-config-vmo
 ```
 
 or
 
 ```shell
-$ npm install -D eslint prettier @vmo11/eslint-config-vmo
+$ npm install -D @vmo11/eslint-config-vmo
+$ npx install-peerdeps -D @vmo11/eslint-config-vmo
 ```
 
 Included:
@@ -31,6 +33,8 @@ Included:
 - eslint-plugin-react-hooks
 - eslint-plugin-simple-import-sort
 - eslint-plugin-testing-library
+- eslint
+- prettier
 
 ## Usage
 
