@@ -109,7 +109,7 @@ Add the following to your `package.json` file to define a script that will lint 
 ```jsx
 "scripts": {
   // ..
-  "lint": "eslint --ignore-path .gitignore ."
+  "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src"
   // ..
 }
 ```
@@ -119,7 +119,7 @@ To fix all automatically-fixable issues, you can add the following script to you
 ```jsx
 "scripts": {
   // ..
-  "lint:fix": "eslint --ignore-path .gitignore --fix ."
+  "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ./src"
   // ..
 }
 ```
